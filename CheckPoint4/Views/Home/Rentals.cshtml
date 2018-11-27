@@ -1,0 +1,33 @@
+﻿@model IEnumerable<CheckPoint4.Models.Instrument>
+<br /><br /><br />
+<h2>Rentals</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+Click an instrument name to request to rent it.
+<table class="table">
+    <tr>
+        <th>
+            Instrument
+        </th>
+
+        <th>
+            New or Used
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+           @Html.ActionLink(item.Description, "Create", new { id = item.InstrumentID })
+            </td> 
+        
+            <td>
+            @item.Type
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link href="~/Content/Cerulean.min.css" rel="stylesheet" />
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        @Html.ActionLink("BlowOut Instrument Rentals", "Index", "Home", null, null)
+                    </li>
+                    <li class="nav-item">@Html.ActionLink("Home", "Index", "Home", null, null)</li>
+                    <li class="nav-item">@Html.ActionLink("Clients", "Index", "Clients")</li>
+                    <li class="nav-item">@Html.ActionLink("Instruments", "Index", "Instruments")</li>
+                    <li class="nav-item">@Html.ActionLink("Rentals", "Rentals", "Home")</li>
+                    <li class="nav-item">@Html.ActionLink("About", "About", "Home")</li>
+                    
+
+                </ul>
+                <style>
+                    .nav-item {
+                        font-size: medium;
+                    }
+                </style>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year BlowOut Rentals</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

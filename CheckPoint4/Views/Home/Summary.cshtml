@@ -1,0 +1,154 @@
+﻿
+@{
+    ViewBag.Title = "Summary";
+}
+<br />
+<br />
+<br />
+<h2>Summary</h2>
+
+<p>Thank you for your order, @ViewBag.Client.FirstName!</p>
+<p>Your order number is <strong>@ViewBag.Client.ClientID</strong></p>
+<p>
+    You are renting a @ViewBag.Instrument.Type @ViewBag.Instrument.Description for $@ViewBag.Instrument.Price per month.
+    If you rent this instrument for 18 months, it will be yours! In that case, the total cost will be $@(@ViewBag.Instrument.Price * 18).
+</p>
+
+@if (ViewBag.Instrument.Description == "Trumpet" && ViewBag.Instrument.Type == "New")
+{
+    <p>
+        <img class="NTrump" src="https://media.wwbw.com/is/image/MMGS7/BTR-300-Series-Student-Bb-Trumpet-Lacquer/463683000420000-00-500x500.jpg">
+    </p>
+    <style>
+        .NTrump {
+            height: 500px;
+        }
+    </style>
+}
+else if (ViewBag.Instrument.Description == "Trumpet" && ViewBag.Instrument.Type == "Used")
+{
+    <p>
+        <img class="NTrump" src="https://s3.amazonaws.com/used.wp/wp-content/uploads/2018/02/05171146/115.jpg">
+    </p>
+    <style>
+        .NTrump {
+            height: 500px;
+        }
+    </style>
+}
+else if (ViewBag.Instrument.Description == "Trombone" && ViewBag.Instrument.Type == "New")
+{
+    <p>
+        <img class="NTrump" src="https://images-na.ssl-images-amazon.com/images/I/71umxn-2NzL._SX425_.jpg">
+    </p>
+    <style>
+        .NTrump {
+            height: 500px;
+        }
+    </style>
+
+
+}
+
+else if (ViewBag.Instrument.Description == "Trombone" && ViewBag.Instrument.Type == "Used")
+{
+    <p>
+        <img class="NTrump" src="https://dihtpb0bw1sw0.cloudfront.net/3bcew001n1xb2hy6fms6gtsvxg.jpg?w=535&h=535&mode=crop">
+    </p>
+    <style>
+        .NTrump {
+            height: 500px;
+        }
+    </style>
+
+
+}
+
+else if (ViewBag.Instrument.Description == "Flute" && ViewBag.Instrument.Type == "New")
+{
+    <p>
+        <img class="NTrump" src="https://images-na.ssl-images-amazon.com/images/I/31PHnrpiPQL._SX425_.jpg">
+    </p>
+    <style>
+        .NTrump {
+            height: 500px;
+        }
+    </style>
+}
+else if (ViewBag.Instrument.Description == "Flute" && ViewBag.Instrument.Type == "Used")
+{
+    <p>
+        <img class="NTrump" src="https://d21o2c77w1ctcr.cloudfront.net/na62a09wmy1tghexf6akhg7nw8.jpg?w=535&h=535&mode=crop">
+    </p>
+    <style>
+        .NTrump {
+            height: 500px;
+        }
+    </style>
+}
+else if (ViewBag.Instrument.Description == "Tuba" && ViewBag.Instrument.Type == "New")
+{
+    <p>
+        <img class="NTrump" src="https://media.wwbw.com/is/image/MMGS7/YBB-105WC-Series-3-Valve-3-4-BBb-Tuba/461352000000000-00-220x220.jpg">
+    </p>
+    <style>
+        .NTrump {
+            height: 500px;
+        }
+    </style>
+}
+else if (ViewBag.Instrument.Description == "Tuba" && ViewBag.Instrument.Type == "Used")
+{
+    <p>
+        <img class="NTrump" src="https://d2sbqp7jvp40ax.cloudfront.net/1c6dt05xn0x8jkns3wr8ve0f50.jpg?w=535&h=535&mode=crop">
+    </p>
+    <style>
+        .NTrump {
+            height: 500px;
+        }
+    </style>
+}
+else if (ViewBag.Instrument.Description == "Saxophone" && ViewBag.Instrument.Type == "Used")
+{
+    <p>
+        <img class="NTrump" src="https://static.shoplightspeed.com/shops/612125/files/006914084/650x750x2/image.jpg">
+    </p>
+    <style>
+        .NTrump {
+            height: 500px;
+        }
+    </style>
+}
+else if (ViewBag.Instrument.Description == "Saxophone" && ViewBag.Instrument.Type == "New")
+{
+    <p>
+        <img class="NTrump" src="http://www.usamusicsupply.com/media/catalog/product/cache/1/image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/a/l/alto_saxbrass_02_2.jpg">
+    </p>
+    <style>
+        .NTrump {
+            height: 500px;
+        }
+    </style>
+}
+else if (ViewBag.Instrument.Description == "Clarinet" && ViewBag.Instrument.Type == "New")
+{
+    <p>
+        <img class="NTrump" src="https://midriversmusic.com/wp-content/uploads/clarinet.jpg">
+    </p>
+    <style>
+        .NTrump {
+            height: 500px;
+        }
+    </style>
+}
+else if (ViewBag.Instrument.Description == "Clarinet" && ViewBag.Instrument.Type == "Used")
+{
+    <p>
+        <img class="NTrump" src="https://images-na.ssl-images-amazon.com/images/I/41%2BuTefMFkL._SL500_AC_SS350_.jpg">
+    </p>
+    <style>
+        .NTrump {
+            height: 500px;
+        }
+    </style>
+}
